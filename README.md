@@ -4,21 +4,22 @@ Envie arquivo para o azure storage account através da linha de comando
 
 ## Como usar
 
-- Configurações
+### Parâmetros
+```CMD
 --settings "Configurações"
 --connection-string "String de conexão do storage"
 --add-file  "Adicionar caminho do arquivo para backup"
 --remove-file "Remover arquivo para backup pelo caminho"
 --clean "Limpar arquivo de configuração"
-
--Backup
 --backup "Executa a transferncia dos arquivos"
-        public bool Backup { get; set; }
+```
+
 
 Ver as configurações atual
 ```CMD
  .\BackupStorage.exe -s
 ```
+você verá o resultado:
 ```JSON
 {
   "StorageAccount": {
