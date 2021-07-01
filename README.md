@@ -43,4 +43,10 @@ Executar o backup, todos arquivos listado serão executados
 .\BackupStorage.exe -b
 ```
 
+### Deploy
+
+```PS1
+dotnet publish -r win-x64 /p:PublishSingleFile=true
+Compress-Archive -Path bin/Debug/net5.0/win-x64/publish/* -DestinationPath BackupStorage.zip -Force
+```
 
