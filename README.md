@@ -50,3 +50,8 @@ dotnet publish -r win-x64 /p:PublishSingleFile=true
 Compress-Archive -Path bin/Debug/net5.0/win-x64/publish/* -DestinationPath BackupStorage.zip -Force
 ```
 
+### Download
+```PS1
+Invoke-WebRequest https://github.com/silverio27/BackupStorage/blob/main/BackupStorage.zip -O BackupStorage.zip
+```
+
