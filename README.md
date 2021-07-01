@@ -55,3 +55,9 @@ Compress-Archive -Path bin/Debug/net5.0/win-x64/publish/* -DestinationPath Backu
 Invoke-WebRequest https://github.com/silverio27/BackupStorage/blob/main/BackupStorage.zip -O BackupStorage.zip
 ```
 
+### Agendado de tarefas
+>importante definir que execução aconteça no mesmo lugar em que foi definido as configurações
+![image](https://user-images.githubusercontent.com/59040502/124159519-a3406c80-da71-11eb-941b-71b2e53b071a.png)
+
+
+
