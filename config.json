@@ -1,0 +1,7 @@
+{
+  "StorageAccount": {
+    "ConnectionString": ""
+  },
+  "FilesToBackup": [],
+  "Retention": 0
+}

@@ -17,6 +17,8 @@ namespace BackupStorage
 
         [Option('r', "remove-file", Required = false, HelpText = "Remover arquivo para backup pelo caminho")]
         public string RemoveFile { get; set; }
+        [Option( "retention", Required = false, HelpText = "Configurar retenção")]
+        public int? Retention { get; set; }
 
         [Option('c', "clean", Required = false, HelpText = "Limpar arquivo de configuração")]
         public bool CleanConfiguration { get; set; }

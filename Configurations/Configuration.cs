@@ -8,6 +8,7 @@ namespace BackupStorage
     {
         public StorageAccount StorageAccount { get; set; }
         public IList<FileToBackup> FilesToBackup { get; set; }
+        public int Retention { get; set;}
 
         public override string ToString()
         {
@@ -33,13 +34,17 @@ namespace BackupStorage
             FilesToBackup.Remove(file);
         }
 
-        public void Clean(){
+        public void Clean()
+        {
             this.StorageAccount.SetConnectionString("");
+            this.Retention = 0;
             this.FilesToBackup = new List<FileToBackup>();
         }
-        public void Create(){
+        public void Create()
+        {
             this.StorageAccount = new StorageAccount("");
             this.FilesToBackup = new List<FileToBackup>();
+            this.Retention = 0;
         }
 
     }
